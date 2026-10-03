@@ -1,0 +1,25 @@
+name: Predlog / zadatak
+description: Nova funkcionalnost ili zadatak
+labels: ["feature"]
+body:
+  - type: textarea
+    id: kontekst
+    attributes:
+      label: Kontekst
+      description: Šta se traži i zašto?
+    validations:
+      required: true
+  - type: textarea
+    id: kriterijumi
+    attributes:
+      label: Kriterijumi prihvatanja
+      description: Merljivi uslovi završenosti.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: provera
+    attributes:
+      label: Provera
+      description: Kako ručno proveriti rezultat?

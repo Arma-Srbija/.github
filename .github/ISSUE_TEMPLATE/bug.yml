@@ -1,0 +1,37 @@
+name: Bug
+description: Prijava greške
+labels: ["bug"]
+body:
+  - type: textarea
+    id: kontekst
+    attributes:
+      label: Kontekst
+      description: Šta ne radi i gde? Šta je očekivano ponašanje?
+    validations:
+      required: true
+  - type: textarea
+    id: koraci
+    attributes:
+      label: Koraci reprodukcije
+      placeholder: |
+        1. ...
+        2. ...
+  - type: input
+    id: gde
+    attributes:
+      label: Gde viđeno
+      placeholder: URL / stranica
+  - type: textarea
+    id: kriterijumi
+    attributes:
+      label: Kriterijumi prihvatanja
+      description: Merljivi uslovi da se prijava smatra rešenom.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: provera
+    attributes:
+      label: Provera
+      description: Kako ručno proveriti popravku?
